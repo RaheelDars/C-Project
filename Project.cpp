@@ -33,20 +33,20 @@ int main() {
  //Arthematic operation
 	 
     if(userinput==1){
- 	      cout<<"1 : Addition "<<endl;
-              cout<<"2 : Subtraction "<<endl;
- 	      cout<<"3 : Multiplication "<<endl;
- 	      cout<<"4 : Division "<<endl;
- 	      cout<<"5 : Main Menu \n"<<endl;
- 	      cout<<"Enter your choice = ";
-     	      cin>>choice; 
+ 	  cout<<"1 : Addition "<<endl;
+          cout<<"2 : Subtraction "<<endl;
+ 	  cout<<"3 : Multiplication "<<endl;
+          cout<<"4 : Division "<<endl;
+          cout<<"5 : Main Menu \n"<<endl;
+          cout<<"Enter your choice = ";
+          cin>>choice; 
 	    
-	    if(choice==1)
+	  if(choice==1)
 	    {
 		  calc=add();
 	          goto A;
              }
-            if(choice==2)
+          if(choice==2)
 	    {
 	         calc=subtract();	
 		 goto A;
@@ -61,7 +61,7 @@ int main() {
 		  calc=division();
 	          goto A;
             }
-            if(choice==5)
+           if(choice==5)
 	     {
 		  goto A;
             
@@ -96,24 +96,24 @@ int main() {
 	     goto A;
 	 }  
         if(choice==4) 
-	{
+	 {
              calc=sin_inverse();
              goto A;
-	} 
-       if(choice==5)
-	{
+	 } 
+        if(choice==5)
+	 {
 	    calc=cos_inverse();
 	    goto A;
-	} 
-      if(choice==6)
-       {
+	 } 
+        if(choice==6)
+         {
 	   calc=tan_inverse();
 	   goto A;
-      }  
-     if(choice==7)
-     {
-     	goto A;
-     }  	 
+         }  
+        if(choice==7)
+         {
+     	   goto A;
+        }  	 
       }
   //Logarithm operation
   if(userinput==3)
@@ -123,15 +123,15 @@ int main() {
       cout<<"Enter your choice = ";
       cin>>choice;
 	  
-     if(choice==1)
-      {
+      if(choice==1)
+       {
 	  calc=log();  
 	  goto A;	
-      }
-     if(choice==2)
-     {
+       }
+      if(choice==2)
+       {
         goto A;
-     }
+       }
  }
 //Power function operation      
 if(userinput==4){ 		
@@ -173,75 +173,76 @@ if(userinput==5)
     return 0;
  }
     }
+
 float add(){
-	int x, y;
-	cout<<"Enter the First number : "<<endl;
-	cin>>x;
-	cout<<"Enter the second number : "<<endl;
-	cin>>y;
-	cout<<"Addition = "<<x + y;
+    int x, y;
+    cout<<"Enter the First number : "<<endl;
+    cin>>x;
+    cout<<"Enter the second number : "<<endl;
+    cin>>y;
+    cout<<"Addition = "<<x + y;
 }
 float subtract(){
-	int x, y;
-	cout<<"Enter the First number : ";
-	cin>>x;
-	cout<<"Enter the second number : ";
-	cin>>y;
-	cout<<"Subtraction = "<<x - y;
+    int x, y;
+    cout<<"Enter the First number : ";
+    cin>>x;
+    cout<<"Enter the second number : ";
+    cin>>y;
+    cout<<"Subtraction = "<<x - y;
 }
 float multiply(){
-	int x, y;
-	cout<<"Enter the First number : ";
-	cin>>x;
-	cout<<"Enter the second number : ";
-	cin>>y;
-	cout<<"Multiplication = "<<x * y;
+    int x, y;
+    cout<<"Enter the First number : ";
+    cin>>x;
+    cout<<"Enter the second number : ";
+    cin>>y;
+    cout<<"Multiplication = "<<x * y;
 }
 float division(){
-     int x, y;
-     cout<<"Enter the First number : ";
-     cin>>x;
-     cout<<"Enter the second number : ";
-     cin>>y;
-     int c=x/y;
-     cout<<"Division = "<<c;
+   int x, y;
+   cout<<"Enter the First number : ";
+   cin>>x;
+   cout<<"Enter the second number : ";
+   cin>>y;
+   int c=x/y;
+   cout<<"Division = "<<c;
 }
 float sin(){
-    double x;
-    cout << "Enter angle (in radians) : ";
-    cin >> x;
-    double result = sin(x);
-    cout << "Sin(" << x << ") : " << result << endl;
+   double x;
+   cout << "Enter angle (in radians) : ";
+   cin >> x;
+   double result = sin(x);
+   cout << "Sin(" << x << ") : " << result << endl;
 }
 float cos(){
-    double x;
-    cout << "Enter angle (in radians) : ";
-    cin >> x;
-    double result = cos(x);
-    cout << "Cos(" << x << ") : " << result << endl;
+   double x;
+   cout << "Enter angle (in radians) : ";
+   cin >> x;
+   double result = cos(x);
+   cout << "Cos(" << x << ") : " << result << endl;
 }
 float tan(){
-    double x;
-    cout << "Enter angle (in radians) : ";
-    cin >> x;
-    double result = tan(x);
-    cout << "Tan(" << x << ") : " << result << endl;
+   double x;
+   cout << "Enter angle (in radians) : ";
+   cin >> x;
+   double result = tan(x);
+   cout << "Tan(" << x << ") : " << result << endl;
 }
 float sin_inverse(){
-    double  x ;
-    cout<<"Enter the value (radian) : ";
-    cin>>x;
-    double result ;
-    result = asin(x) * (180/PI);
-    cout << "asin("<<x<<")  = " << result << " degrees" << endl;
+   double  x ;
+   cout<<"Enter the value (radian) : ";
+   cin>>x;
+   double result ;
+   result = asin(x) * (180/PI);
+   cout << "asin("<<x<<")  = " << result << " degrees" << endl;
 }
 float cos_inverse(){
-    double  x ;
-    cout<<"Enter the value (radian) : ";
-    cin>>x;
-    double result ;
-    result = acos(x) * (180/PI);   
-    cout << "acos("<<x<<")  = " << result << " degrees" << endl;	
+   double  x ;
+   cout<<"Enter the value (radian) : ";
+   cin>>x;
+   double result ;
+   result = acos(x) * (180/PI);   
+   cout << "acos("<<x<<")  = " << result << " degrees" << endl;	
 }
 float tan_inverse(){
    double  x ;
@@ -253,11 +254,11 @@ float tan_inverse(){
   	
 }
 float log(){
-    int x ;
-    cout<<"Enter the value : ";
-    cin>>x;
-    float result = log (x);
-    cout << "log(x) = " << result << endl;
+   int x ;
+   cout<<"Enter the value : ";
+   cin>>x;
+   float result = log (x);
+   cout << "log(x) = " << result << endl;
 }
 
 float power(){
@@ -275,18 +276,18 @@ float square(){
    cout<<"Square = "<<res;
 }
 float cube(){
-    int x;
-    cout<<"Enter the number you want to cube : ";
-    cin>>x;
-    int res=pow(x,3);
-    cout<<"Power = "<<res;
+   int x;
+   cout<<"Enter the number you want to cube : ";
+   cin>>x;
+   int res=pow(x,3);
+   cout<<"Power = "<<res;
 }
 float square_root(){
-    int x;
-    cout<<"Enter the number you want to square_root : ";
-    cin>>x;
-    int res=sqrt(x);
-    cout<<"square_root = "<<res;
+   int x;
+   cout<<"Enter the number you want to square_root : ";
+   cin>>x;
+   int res=sqrt(x);
+   cout<<"square_root = "<<res;
 }
 
 
